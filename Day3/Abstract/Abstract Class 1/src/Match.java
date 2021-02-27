@@ -25,5 +25,6 @@ public abstract class Match {
 	
 	abstract float calculateRunrate();
 	abstract int calculateBalls();
-	abstract void display(double reqRunrate, int balls);
+	abstract void display(float reqRunrate, int balls);
+	
 }
