@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class ArithExcep {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		float cur_runrate;
+		
+		System.out.println("Enter the total runs scored ");
+	    int scoredruns= Integer.parseInt(null, sc.nextInt());
+	    System.out.println("Enter the total overs faced: ");
+		int facedovers= sc.nextInt();
+		
+		try {
+			
+			cur_runrate= scoredruns/facedovers;
+			System.out.println("Current runrate: "+cur_runrate);
+			
+		}
+		catch(Exception e) {
+			
+			System.out.println(" "+e);
+		}
+	}	
+}

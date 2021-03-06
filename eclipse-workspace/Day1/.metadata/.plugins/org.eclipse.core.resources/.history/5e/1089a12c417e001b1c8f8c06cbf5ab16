@@ -1,0 +1,25 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DemoMain {
+
+	public static void main(String[] args) throws SQLException {
+               Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/activity1","root","root");
+               Statement s=c.createStatement();
+               //s.execute("insert into jdbc values('Vinayak',778899464)");
+               ResultSet rs=s.executeQuery("select * from jdbc");
+               while(rs.next())
+               {
+            	   
+            	   System.out.println(rs.getString(0)+" "+rs.getInt(1));            	   
+               }
+               
+               c.close();
+          
+	}
+
+}
+

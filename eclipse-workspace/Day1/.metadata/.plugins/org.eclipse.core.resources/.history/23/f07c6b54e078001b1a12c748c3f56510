@@ -1,0 +1,28 @@
+package gguif;
+
+public class InvalidAgeException extends Exception{
+
+	InvalidAgeException()
+	{
+		System.out.println("your under age:");
+}
+  public static class CustomExceptionDemo
+  {
+	  public static void main(String[] args) throws InvalidAgeException
+	  {
+		  int age=17;
+		  if(age<=18)
+		  {
+			  throw new InvalidAgeException();
+			  
+		  }
+		  else
+		  {
+			  System.out.println();
+		  }
+	  }
+	  
+  }
+  
+}
+

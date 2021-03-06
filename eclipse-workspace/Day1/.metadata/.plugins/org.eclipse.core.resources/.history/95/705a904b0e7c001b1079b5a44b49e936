@@ -1,0 +1,46 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Sortmain {
+
+	public static void main(String[] args) throws ParseException {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		ArrayList<Player> arr=new ArrayList<Player>();
+		
+		System.out.println("Enter the number of players: ");
+		int n=sc.nextInt();
+		
+		for(int i=0;i<n;i++)
+		{
+			String name=sc.nextLine();
+			//Date dateOfBirth=new SimpleDateFormat("dd/MM/yyyy").parse(dateOfBirth);
+			String skill=sc.next();
+			int numberOfMatches=sc.nextInt();
+			int runs=Integer.parseInt(sc.next());
+			int wickets=sc.nextInt();
+			String nationality=sc.next();
+			double powerRating=Double.parseDouble(sc.next());
+				
+			}
+		     System.out.println("Enter a type to sort:\n 1.Sortby of matches played \n 2.Sort by runs played \n 3.Sort by Power Rating");
+		     int a=sc.nextInt();
+		
+		     if(a==1)
+		     {//(String name, String skill, int numberOfMatches, String runs2, int wickets, String nationality, String powerRating2)
+		    	 
+		      Collections.sort(arr, new Player(name,skill,numberOfMatches,runs,wickets,nationality,powerRating));
+		    	 
+		     }
+		     }
+			
+		
+		
+		}
+
+

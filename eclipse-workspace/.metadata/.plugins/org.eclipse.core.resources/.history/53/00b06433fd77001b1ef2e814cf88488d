@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class VechileMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the make of vechile:");
+		String make= sc.next();
+		System.out.println("Enter the vehicle number:");
+		String vechilenumber= sc.next();
+		System.out.println("Enter the fuel type:");
+		String fueltype= sc.next();
+		System.out.println("Enter the fuelcapacity:");
+		String fuelcapacaity= sc.next();	 
+		System.out.println("Enter the cc of engine:");
+        int cc= sc.nextInt();
+        System.out.println("Kickstart Available(Yes/No):");
+        String kickStartAvailable= sc.next();
+        System.out.println("Enter Audio system Installed:");
+        String audioSystem= sc.next();
+        System.out.println("Enter number of doors:");
+        int numberofdoors= sc.nextInt();
+        
+        TwoWheeler v= new TwoWheeler(audioSystem, audioSystem, audioSystem, numberofdoors, numberofdoors, audioSystem);
+        FourWheeler b= new FourWheeler(audioSystem, audioSystem, audioSystem, numberofdoors, numberofdoors, audioSystem, numberofdoors);
+        
+        v.setMake(make);
+        v.setVechileNumber(vechilenumber);
+        v.setFueltype(fueltype);
+        v.setFuelcapacaity(fuelcapacaity);
+        v.setKickStartAvailable(kickStartAvailable);
+        b.setAudioSystem(audioSystem);
+        b.setNumberofdoors(numberofdoors);
+        
+        
+	}
+	
+
+}

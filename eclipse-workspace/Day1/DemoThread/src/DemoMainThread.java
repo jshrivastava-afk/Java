@@ -1,0 +1,15 @@
+
+public class DemoMainThread {
+
+	public static void main(String[] args) {
+		
+		Demo d=new Demo();
+		d.start();
+		d.run();
+		for(int i=0;i<=5;i++) {
+			
+			System.out.println("Main Thread "+i);
+		}
+		
+	}
+}

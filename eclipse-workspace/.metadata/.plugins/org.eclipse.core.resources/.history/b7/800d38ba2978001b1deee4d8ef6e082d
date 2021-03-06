@@ -1,0 +1,28 @@
+
+public class MatchODI extends Match {
+
+	@Override
+	float calculateRunrate() {
+		
+		int a= (getTarget()-getCurrentscore())/(50-getCurentover()) ;
+		 System.out.println("Runrate Required:"+a);
+		
+		return a;
+	}
+
+	@Override
+	int calculateBalls() {
+		
+		int b = (300-getCurentover()*6);
+		
+		return 0;
+	}
+
+	@Override
+	void display(double reqRunrate, int balls) {
+		
+		
+	}
+
+	
+}

@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+		import java.util.Collections;
+		import java.util.Comparator;
+		import java.util.List;
+		import java.util.Scanner;
+
+public class MatchSortMain {
+
+
+		
+		
+
+			           public static void main(String[] args) 
+			     {
+			         Scanner sc = new Scanner(System.in);
+			         ArrayList<Match> arr = new ArrayList<Match>();
+			         System.out.println("Enter the number of Matches: ");
+			         int n = sc.nextInt();
+			         for(int i = 0;i<n;i++)
+			         {
+			        	 System.out.println("Enter Match Date in MM-DD-YYYY");
+			        	 String n1= sc.nextLine();
+			        	 
+			        	 System.out.println("Enter Team 1: ");
+			        	 String n2 = sc.next();
+
+			        	 System.out.println("Enter Team 2: ");
+			        	 String n3 = sc.next();
+			        	 
+			        	 arr.add(new Match(n1,n2,n3));
+			         }
+			        
+			         Comparator c = Collections.reverseOrder();
+			         Collections.sort(arr,c);
+			         System.out.println("Sorted list using Comparator : " + arr);
+			    }
+
+		
+			
+
+	}
+
+

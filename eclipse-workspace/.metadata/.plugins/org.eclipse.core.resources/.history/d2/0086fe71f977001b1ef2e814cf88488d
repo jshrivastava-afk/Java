@@ -1,0 +1,26 @@
+
+public class TwoWheeler extends Vechile {
+
+	private String kickStartAvailable;
+	
+	
+
+	public TwoWheeler(String make, String vechileNumber, String fueltype, int fuelcapacaity, int cc,
+			String kickStartAvailable) {
+		super(make, vechileNumber, fueltype, fuelcapacaity, cc);
+		this.kickStartAvailable = kickStartAvailable;
+	}
+
+	public String getKickStartAvailable() {
+		return kickStartAvailable;
+	}
+
+	public void setKickStartAvailable(String kickStartAvailable) {
+		this.kickStartAvailable = kickStartAvailable;
+	}
+	
+	public void displayDetailInfo() {
+		
+		System.out.println("Kickstart Available(Yes/No):"+getKickStartAvailable());
+	}
+}

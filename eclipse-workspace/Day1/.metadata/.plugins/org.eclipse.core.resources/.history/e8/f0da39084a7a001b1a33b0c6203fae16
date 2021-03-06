@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class DemoCollectionMain {
+
+	public static void main(String[] args) {
+		
+		ArrayList al= new ArrayList();
+		al.add(new Person(sc.next()));
+		System.out.println(al);
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.ltts.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ltts.model.Player;
+import com.ltts.model.Team;
+
+public class TeamDAO {
+
+	public List<Player> getAllPlayers(){
+		List<Player> li=new ArrayList<Player>();
+		
+		return li;
+		}
+	public Team getTeamById(int id) {
+		Team t = new Team();
+			
+		return t;
+	}
+}

@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class MatchMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Format:\n");
+		System.out.println("1.ODI\n 2.T20\n 3.Test");
+		int x= sc.nextInt();
+		
+		if(x==1)
+		{
+		  MatchODI O = new MatchODI();
+		  
+		  System.out.println("Enter the Current score: ");
+		  int currentscore= sc.nextInt();
+		  O.setCurrentscore(currentscore);
+		  System.out.println("Enter the Current over: ");
+		  int curentover= sc.nextInt();
+		  O.setCurentover(curentover);
+		  System.out.println("Enter the Target ");
+		  int target= sc.nextInt();
+		  O.setTarget(target);
+		  
+		  float reqRunrate= O.calculateRunrate();
+		  int balls= O.calculateBalls();
+		  
+		  O.calculateRunrate();
+		  O.calculateBalls();
+		  O.display(reqRunrate, balls);
+		}
+		
+		if(x==2)
+		{
+			MatchT20 T = new MatchT20();
+			  
+			  System.out.println("Enter the Current score: ");
+			  int currentscore= sc.nextInt();
+			  T.setCurrentscore(currentscore);
+			  System.out.println("Enter the Current over: ");
+			  int curentover= sc.nextInt();
+			  T.setCurentover(curentover);
+			  System.out.println("Enter the Target ");
+			  int target= sc.nextInt();
+			  T.setTarget(target);
+			  
+			  float reqRunrate= T.calculateRunrate();
+			  int balls= T.calculateBalls();
+			  
+			  T.calculateRunrate();
+			  T.calculateBalls();
+			  T.display(reqRunrate, balls);
+		}
+	}
+	
+}
